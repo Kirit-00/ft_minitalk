@@ -6,7 +6,7 @@
 /*   By: maltun <maltun@student.42istanbul.com.t    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/01 08:50:44 by maltun            #+#    #+#             */
-/*   Updated: 2023/05/02 22:55:20 by maltun           ###   ########.fr       */
+/*   Updated: 2023/05/05 23:17:13 by maltun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	sig_usr(int sig)
 
 	if (sig == SIGUSR1)
 		str = str | 1;
-	if (++get_byte == 8)
+	if (++get_byte == 7)
 	{
 		get_byte = 0;
 		if (!str)

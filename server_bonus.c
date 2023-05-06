@@ -6,7 +6,7 @@
 /*   By: maltun <maltun@student.42istanbul.com.t    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/01 08:50:44 by maltun            #+#    #+#             */
-/*   Updated: 2023/05/03 07:35:39 by maltun           ###   ########.fr       */
+/*   Updated: 2023/05/06 00:40:30 by maltun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,12 +37,7 @@ void	set_feedback_pid(int sig, int *isFinished)
 	{	
 		get_byte = 0;
 		if (!c)
-		{
 			*isFinished = 1;
-			write(1, "Sender's pid is ", 16);
-			write(1, g_pid, ft_strlen(g_pid));
-			ft_putchar('\n');
-		}
 		g_pid = ft_strjoin(g_pid, c);
 		c = 0;
 	}

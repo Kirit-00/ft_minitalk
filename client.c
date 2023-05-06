@@ -6,7 +6,7 @@
 /*   By: maltun <maltun@student.42istanbul.com.t    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/01 08:51:08 by maltun            #+#    #+#             */
-/*   Updated: 2023/05/02 22:38:08 by maltun           ###   ########.fr       */
+/*   Updated: 2023/05/06 00:23:59 by maltun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_kill(int pid, char *str)
 
 	while (*str)
 	{
-		i = 8;
+		i = 7;
 		c = *(str++);
 		while (i--)
 		{
@@ -30,7 +30,7 @@ void	ft_kill(int pid, char *str)
 			usleep(50);
 		}
 	}
-	i = 8;
+	i = 7;
 	while (i--)
 	{
 		kill(pid, SIGUSR2);
